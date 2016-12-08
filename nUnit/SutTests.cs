@@ -14,7 +14,11 @@ namespace nUnit
 		[TestCase]
 		public void CreateInstsnce_InstanceCreated()
 		{
+			//Arange
+			//Act
 			var sut = new SutLibrary();
+
+			//Assert
 			Assert.NotNull(sut);
 		}
 	}

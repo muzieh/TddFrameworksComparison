@@ -11,10 +11,14 @@ namespace xUnit
 	public class SutTests
 	{
 		[Fact]
-		public void CreateInstsnce_InstanceCreated()
+		public void CreateInstance_InstanceCreated()
 		{
+			//Arange
+			//Act
 			var sut = new SutLibrary();
-			Assert.NotNull(sut);	
+
+			//Assert
+			Assert.NotNull(sut);
 		}
 	}
 }
