@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TddFrameworksComparition\SUT.csproj">
-      <Project>{4f5d0965-e9ca-4171-a1c2-209193b5a294}</Project>
-      <Name>SUT</Name>
+    <ProjectReference Include="..\Sut\Sut.csproj">
+      <Project>{283012ee-b778-4767-90bf-e21ebc64b221}</Project>
+      <Name>Sut</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
