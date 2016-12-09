@@ -19,6 +19,7 @@ namespace nUnit
 			this.globalSutLibrary = new SutLibrary();
 		}
 
+
 		[TearDown]
 		public void TearDown()
 		{
