@@ -43,7 +43,7 @@ namespace msTest
 			Assert.IsNotNull(sut);
 		}
 
-		[TestMethod()]
+		[TestMethod]
 		public void AddNumbers_1_2_result3()
 		{
 			//Arange
@@ -71,5 +71,15 @@ namespace msTest
 		//	Assert.AreEqual(expectedResult, actualResult);
 		//}
 
+
+		[ExpectedException(typeof(ArgumentNullException))]
+		[TestMethod]
+		public void AddNumbers_Zero_Exception()
+		{
+			//Arange
+			var sut = this.globalSutLibrary;
+			//Act
+			sut.Add(0, 1);
+		}
 	}
 }

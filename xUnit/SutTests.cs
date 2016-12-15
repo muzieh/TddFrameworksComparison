@@ -71,6 +71,19 @@ namespace xUnit
 			Assert.Equal(expectedResult, actualResult);
 		}
 
+		[Fact]
+		public void AddNumbers_Zero_Exception()
+		{
+			//Arange
+			var sut = this.globalSutLibrary;
+
+			//Act
+			//Assert
+			Assert.Throws<ArgumentNullException>(() =>
+			{
+				sut.Add(0, 1);
+			});
+		}
 
 	}
 }

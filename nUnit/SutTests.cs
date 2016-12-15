@@ -74,5 +74,15 @@ namespace nUnit
 			Assert.AreEqual(expectedResult, actualResult);
 		}
 
+		[TestCase]
+		public void AddNumbers_Zero_Exception()
+		{
+			//Arange
+			var sut = this.globalSutLibrary;
+			//Act
+			//Assert
+			Assert.That(() => { sut.Add(0,1); }, Throws.TypeOf<ArgumentNullException>());
+		}
+
 	}
 }
